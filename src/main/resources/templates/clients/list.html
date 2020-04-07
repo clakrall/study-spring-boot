@@ -1,0 +1,50 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title th:text="Study"></title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/jquery.dataTables.min.css}">
+
+    <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.dataTables.min.js}"></script>
+</head>
+<body>
+</div>
+<div class="container">
+    <div layout:fragment="content">
+        <div class="element-wrapper">
+            <div>
+                <a href="/clients/new" class="btn-sm btn-success btn-icon icon-left btn-new">
+                    <span th:text="Novo"></span>
+                </a>
+            </div>
+
+            <!-- TITLE -->
+            <div class="element-box">
+                <!-- TABLE -->
+                <div class="table-responsive">
+                    <table id="client_list" width="100%" class="table table-striped table-lightfont table-hover">
+                        <thead>
+                        <tr>
+                            <th th:text="Nome"></th>
+                            <th th:text="email"></th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/clients/list.js"></script>
+</body>
+</html>
+
+
+
+

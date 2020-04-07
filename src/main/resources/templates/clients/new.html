@@ -1,0 +1,48 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <title th:text="Study"></title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+
+    <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.serializejson.js}"></script>
+</head>
+<body>
+</div>
+<div class="container">
+    <div class="element-wrapper">
+        <!-- ACTION BUTTONS -->
+        <h6 class="element-header" id="title" th:text="'Novo Cliente'"></h6>
+        <form id="client_form" action="">
+            <div class="row">
+                <fieldset class="form-group col-sm-12" style="margin-top: 0rem;">
+                    <legend><span th:text="Cadastro"></span></legend>
+                </fieldset>
+
+                <div class="form-group col-lg-3" id="company-group">
+                    <label th:text="Nome + '*'"></label>
+                    <input type="text" name="name" id="name" class="form-control">
+                </div>
+
+                <div class="form-group col-lg-3" id="email-group">
+                    <label th:text="Email + '*'"></label>
+                    <input type="text" name="email" id="email" class="form-control"
+                           placeholder="email@email.com">
+                </div>
+                <div>
+                    <a href="/clients/new" class="btn-sm btn-info btn-icon icon-left btn-save">
+                        <span th:text="Salvar"></span>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<script src="/js/clients/form.js"></script>
+</body>
+</html>
